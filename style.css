@@ -22,6 +22,7 @@ box-sizing: border-box;
 
 body{
 height: 100vh;
+width: 100vw;
 text-align: center;
 background-color: var(--background-color);
 padding: 0.1rem;
@@ -335,7 +336,7 @@ padding: 0.1rem;
     .featureGrid
         {
             grid-template-columns: repeat(1,1fr);
-            margin: 0 1rem;
+            margin: 1rem 1rem;
             /* gap: 1rem; */
         }
 }
@@ -470,6 +471,10 @@ padding: 0.1rem;
         max-width: 350px;
         margin-bottom: 2rem;
 
+    }
+
+    .testCard{
+        margin: 1rem 1rem;
     }
     
 }
@@ -639,7 +644,7 @@ padding: 0.1rem;
 .footerContainer{
     background-color: var(--background-color);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     max-width: 1280px;
@@ -647,46 +652,70 @@ padding: 0.1rem;
 
 .footer{
     max-width: 1280px;
-    padding: 1.2rem 2.4rem;
+    padding: 0.7rem 1rem;
     text-align: left;
     display: flex;
-    justify-content: space-between;
-    padding-right: 2rem;
+    justify-content:center;
+    padding-right: 1rem;
+
 }
 
 @media screen and (max-width:1080px)
 {
     .footer{
         flex-direction: column;
-        align-items:center ;
+        gap: 1px;
+        padding:0.1rem;
     }
 
     .footerLeft{
-        padding: 1rem;
+        padding: 0.1rem;
+        align-items: center;
     }
     
     .footerRight{
         align-self: center;
-        justify-content: space-evenly;
+        justify-content:space-evenly;
+        padding:1px;
+    }
+    .footerlinkList{
+        padding:0.1rem;
     }
 }
 
-@media screen and (max-width:640px)
+@media screen and(max-width:475px)
 {
+    .footer{
+        flex-direction: column;
+        align-items:center ;
+        padding:0.1rem;
+    }
+
     .footerLeft{
-        padding: 5rem;
+        padding:0.1rem;
+        align-items: center;
     }
     
     .footerRight{
-        grid-template-columns: repeat(2,1fr);
+        align-self: center;
+        justify-content: space-around;
+        padding:0.1rem;
     }
+    .footerlinkList{
+        padding:0.1rem;
+    }
+
+    .fillerText{
+        font-size: 15px;
+    }
+    
 }
 
 .footerLeft{
     width:100%;
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1rem;
 }
 
 .compLogo{
@@ -699,7 +728,7 @@ padding: 0.1rem;
     justify-content: center;
     align-items: center;
     gap: .8rem;
-    font-size: 1.38rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: black;
 }
@@ -726,18 +755,20 @@ padding: 0.1rem;
 
 .footerRight{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 5.67rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.67rem;
     width: 100%;
-    padding-top: 2.59rem;
+    padding-top: 2rem;
+    display:flex;
+    justify-content:space-between;
     
 }
 
 .footerHeading{
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 900;
     color: var(--text-color);
-    margin-bottom: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 ul{
@@ -747,21 +778,22 @@ ul{
 .footerlinkList{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 .footerLinks{
     color: #777;
-    font-size: 0.875rem;
+    font-size: 0.980rem;
 }
 
 .footercopyRight{
     color: var(--gray);
     margin-bottom: 0.75rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
 
 }
+
